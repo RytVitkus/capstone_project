@@ -22,7 +22,10 @@ As listed above, the file used in raw is from Kaggle. It is too large to uploade
 
 
 # 2. EDA
-The Kaggle dataset imported was a ~285,000 transaction file, with `Time`, `Class` (0 - N.Fraud, 1 - Fraud), `V1` - `V28` columns (anonymized data that was taken from the transactions, with ranges from -50 to 50), and `Amt`. The split of the data was roughly around 99.83% being non-fraudulent transactions, and 0.17% fraudulent. Most models trained on this dataset alone would likely never predict the fraudulent transactions yet be considered 99.83% accurate! This isn't ideal.
+The Kaggle dataset imported was a ~285,000 transaction file, with `Time`, `Class` (0 - N.Fraud, 1 - Fraud), `V1` - `V28` columns (anonymized data that was taken from the transactions, with ranges from -50 to 50), and `Amount`. The split of the data was roughly around 99.83% being non-fraudulent transactions, and 0.17% fraudulent. Most models trained on this dataset alone would likely never predict the fraudulent transactions yet be considered 99.83% accurate! This isn't ideal.
 
-In exploring the dataset
+In exploring the dataset, I found that aside from some minor correlations between `Amount` and several variables, and small correlations between `Class` and the `V##` variables, all of the `V##` variables didn't appear correlated with each other. (A problem that occurs in highly imbalanced datasets) To get a better picture of this, I employed some bootstrapping on the dataset and sampled the minority class, our fraudulent transactions, to make a balanced dataset for visualization. On top of this, I also created several undersampling datasets, with `random_state` values chosen by my classmates. (This is for allowing for exactly replicable results if you choose to run the code!)
+
+Both the oversampling and undersampling results showed much more obvious correlations between the variables! You can see much more obvious positive and negative correlations between the variables, and how they affect the `Class` variable as well. This is visible in the presentation as a heatmap that is much more colorful, but also visible if the code is run in the EDA workbook.
+
 
