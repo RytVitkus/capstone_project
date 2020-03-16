@@ -29,3 +29,18 @@ In exploring the dataset, I found that aside from some minor correlations betwee
 Both the oversampling and undersampling results showed much more obvious correlations between the variables! You can see much more obvious positive and negative correlations between the variables, and how they affect the `Class` variable as well. This is visible in the presentation as a heatmap that is much more colorful, but also visible if the code is run in the EDA workbook.
 
 
+# 3. Results / Conclusions
+So we have four types of datasets:
+1. Oversample
+2. Undersample
+3. ADASYN (Oversample method)
+4. SMOTE (Oversample method)
+
+On each of those datasets, 5 different models were run through `GridSearchCV` in an attempt to find the best results on the datasets. Those models were:
+- Decision Trees
+- Extra Trees
+- Random Forest
+- Logistic Regression (my personal favorite, results aside)
+- $k$-NN
+
+The various results can be found in the non-`EDA` notebooks per sampling model. 
