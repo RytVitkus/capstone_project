@@ -1,6 +1,7 @@
 # Imbalanced Dataset - Capstone Project DSI (#6)
 
 
+
 # 0. Problem Statement & Summary
 What are some methods that can be used and applied to highly imbalanced datasets (90/10 or worse) while still producing an accurate model?
 
@@ -21,3 +22,7 @@ As listed above, the file used in raw is from Kaggle. It is too large to uploade
 
 
 # 2. EDA
+The Kaggle dataset imported was a ~285,000 transaction file, with `Time`, `Class` (0 - N.Fraud, 1 - Fraud), `V1` - `V28` columns (anonymized data that was taken from the transactions, with ranges from -50 to 50), and `Amt`. The split of the data was roughly around 99.83% being non-fraudulent transactions, and 0.17% fraudulent. Most models trained on this dataset alone would likely never predict the fraudulent transactions yet be considered 99.83% accurate! This isn't ideal.
+
+In exploring the dataset
+
