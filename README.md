@@ -43,4 +43,4 @@ On each of those datasets, 5 different models were run through `GridSearchCV` in
 - Logistic Regression (my personal favorite, results aside)
 - $k$-NN
 
-The various results can be found in the non-`EDA` notebooks per sampling model. 
+The various results can be found in the non-`EDA` notebooks per sampling model, but simplified tables can be found in the presentation slides (linked at the bottom!). What I found was that the Logistic Regression performed the best when it came to being optimized for Sensitivity. While it was technically less accurate overall (due to incorrecty predicting a lot of transactions as fraudulent when they weren't), it allowed for the fewest transactions to get through that were predicted as Non-Fraudulent when they were actually Fraudulent. There's ample room to improve upon that model and test more models as well, but with the time constraints, it worked the best. The various tree models showed high accuracy, but let more of those False-Negatives slip through compared to the Logistic Regression. 
