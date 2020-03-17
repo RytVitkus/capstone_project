@@ -48,6 +48,16 @@ The various results can be found in the non-`EDA` notebooks per sampling model, 
 
 # 4. Looking Ahead / Next Steps
 
+As with any project, there's always room for improvment, and often times inspiration comes to us after we've delivered a product. With the results that I have, I find that I can definitely do more with the project and wholly intend to. Going forward, my next steps are:
+
+1. Incorporate `Time` and `Amount` into the model. I can scale these and make (hopefully) better predictions with them included.
+2. Create additional features to test on some models. These would include interaction variables made from highly correlated variable pairs, representing the synergy between them.
+3. Implement and run a neural network on the data. A stretch, yet fun idea goal of mine to keep building on results and skills.
+4. Explore additional undersampling / oversampling methods
+5. Employ ensemble methods like `AdaBoost` and `GradientBoost` or `VotingClassifier` on top of my existing models, and run over additional hyperparameters within my existing models. 
+6. Push that False-Negative rate down, utilizing the `ROC-AUC` scores to adjust the threshold without giving up too much ground to the False-Positive rate
+
+
 
 
 
